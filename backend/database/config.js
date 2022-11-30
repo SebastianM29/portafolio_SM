@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 //require('dotenv').config({path:'../../.env'})
 const obj = require('../config/index')
 
-console.log('Variable de entorno desde el config :',obj.MongoDB )
+
 
 const dbConection = async() => {
 
