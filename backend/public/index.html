@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Desarrollo web</title>
+</head>
+<body>
+  
+    <!-- seccion inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    
+                   <nav id="nav" class="">
+                    <ul id="links">
+                     <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                     <li><a href="#sobremi">SOBRE MI</a></li>
+                     <li><a href="#skills">SKILLS</a></li>
+                     <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#repogithub">REPOSITORIOS GITHUB</a></li> 
+                    </ul>
+                   </nav>
+                    <!--iconos menu responsive -->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- iconos de linkedin -->
+                    <div class="redes">
+                        
+                        <a href="https://www.linkedin.com/in/sebastian-monzon-732313250"><i class="fa-brands fa-linkedin-in"></i> </a>
+                    </div>
+                   
+
+                </div>
+
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Sebastian Monzon</span>, Backend developer</h2>
+                <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus velit odio asperiores eum voluptatem rerum nobis? Nostrum numquam ad, nesciunt nam quisquam accusamus illum repellat iste, suscipit pariatur id rerum!</p>
+               
+
+            </div>
+        </div>
+
+    </section>
+    <!-- seccion sobre mi -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="imagen_cara.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Mi nombre es <span>Sebastian Monzon</span></h2>
+            <h3>Backend Developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ducimus repellat omnis eos quam dolorem totam iusto nulla! .</p>
+            <p>Lorem ipsum dolor sit amet uisquam?</p>
+            <a download="CV_Monzon_Sebastian" href="./MonzonSebastian_cv.pdf">Descargar CV</a>
+        </div>
+        <section id="contacto">
+        <div  class="envio_formulario">
+            <form id="form_action" action="/user" method="post">
+                         
+                        
+                       
+                    
+                        <label for="nombre">Ingrese su nombre</label><br>
+                        <input type="text" class="field" name="nombre" id="form_c1"><br>
+                       
+        
+        
+        
+                    
+                    
+                        <label for="nombre">Ingrese su email</label><br>
+                        <input type="email" class="field" id="form_c2" name="mail"><br>
+                    
+        
+                 
+                 
+                        <label for="nombre">Ingrese su Consulta</label><br>
+                        <textarea name="mensaje" class="field" id="form_c3"> </textarea><br><br>
+                       
+        
+                               
+                    
+                    <div class="form_input" id="envio_datos">
+                        <input  type="submit" class="btn btn-green"  value="enviar datos">
+                        
+        
+                    </div>
+        
+              
+
+        </div>
+    </section>
+    </section>
+    <section id="skills">
+      <div class="contenedor-flex"><!-- borrar dps -->
+        <div class="contenedor-skills" id="skills">
+            <h3>Skills</h3>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Html & Css</p>
+                    <span class="porcentaje">65%</span>
+                </div>
+                <div class="barra">
+                    <div id="html" class="barra-progreso1"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Javascript</p>
+                    <span class="porcentaje">85%</span>
+                </div>
+                <div class="barra">
+                    <div id="js" class="barra-progreso2"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Base de datos</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div id="bd" class="barra-progreso3"></div>
+                </div>
+
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Node js</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div id="node" class="barra-progreso4"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Api Rest</p>
+                    <span class="porcentaje">75%</span>
+                </div>
+                <div class="barra">
+                    <div id="api" class="barra-progreso5"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Typescript</p>
+                    <span class="porcentaje">50%</span>
+                </div>
+                <div class="barra">
+                    <div id="tipescript" class="barra-progreso6"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Git</p>
+                    <span class="porcentaje">85%</span>
+                </div>
+                <div class="barra">
+                    <div id="git" class="barra-progreso7"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Docker</p>
+                    <span class="porcentaje">50%</span>
+                </div>
+                <div class="barra">
+                    <div id="docker" class="barra-progreso8"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Express</p>
+                    <span class="porcentaje">85%</span>
+                </div>
+                <div class="barra">
+                    <div id="express" class="barra-progreso9"></div>
+                </div>
+
+            </div>
+            <div>
+                <br>
+            </div>
+        </div>
+        <div class="parrafo">
+
+            <p> — Desarrollo de aplicaciones/sistemas Javascript y Typescript. <br>
+                — Uso de NodeJS y framework Express. <br>
+                — Database MongoDB. <br>
+                — Control de versionado Git y repositorios GitHub.</p>
+
+        </div>
+    </div>
+    </section>
+    <section id="repogithub">
+        <h2>REPOSITORIO GITHUB&nbsp<i  class="fa-brands fa-github"></i></h2>
+        
+        <ul id="uli" ></ul>
+      
+        
+    </section>
+
+    <script src="script.js" defer> </script>
+    
+</body>
+</html>
+
+
+
