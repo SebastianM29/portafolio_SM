@@ -1,7 +1,7 @@
 
 
 const lista = document.getElementById('uli');
-console.log(lista)
+
 DataGit = async() => {
     try {
         const resp = await fetch('https://api.github.com/users/SebastianM29/repos')

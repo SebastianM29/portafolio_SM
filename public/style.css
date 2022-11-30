@@ -437,3 +437,42 @@ input, textarea{
     font-style: oblique;
     font-size: 15px;
 }
+/*responsive*/
+ 
+@media screen and (max-width: 800px) {
+    .redes {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        padding: 10px 0;
+        
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+   
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+
+
+
+
+
+
+}
+

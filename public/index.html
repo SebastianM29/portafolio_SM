@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Desarrollo web</title>
@@ -16,18 +16,18 @@
             <header>
                 <div class="contenido-header">
                     
-                   <nav id="nav" class="">
+                   <nav id="nav" class="responsive">
                     <ul id="links">
-                     <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                     <li><a href="#sobremi">SOBRE MI</a></li>
-                     <li><a href="#skills">SKILLS</a></li>
-                     <li><a href="#contacto">CONTACTO</a></li>
-                    <li><a href="#repogithub">REPOSITORIOS GITHUB</a></li> 
+                     <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                     <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                     <li><a href="#skills" onclick="seleccionar(this)">SKILLS</a></li>
+                     <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                    <li><a href="#repogithub" onclick="seleccionar(this)">REPOSITORIOS GITHUB</a></li> 
                     </ul>
                    </nav>
                     <!--iconos menu responsive -->
                     <div id="icono-nav">
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars" onclick="responsiveMenu()"></i>
                     </div>
                     <!-- iconos de linkedin -->
                     <div class="redes">
