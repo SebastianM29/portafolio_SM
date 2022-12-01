@@ -86,7 +86,7 @@ align-items: center;
 }
 #inicio .contenido .presentacion h2 {
     font-size: 55px;
-    margin-bottom: 15px;
+    margin-bottom:25px;
     text-align: center;
 }
 
@@ -122,28 +122,30 @@ align-items: center;
 }
 /*sobre mi*/
 #sobremi {
-    display: flex;/*ultima modificacion*/
-    max-width:1900px;
+    width: 100%;
+    
     margin: 0 auto;
-    padding: 100px 15px;
+    padding: 75px 15px;
     color: #111135;
-    display: flex;
+    display: flex;/*ultima modificacion*/
+    flex-wrap: wrap;
     justify-content:space-between ;
 }
 #sobremi .contenedor-foto {
   
     width: 200px;
-    height:150px;
+    height:200px;
     /*max-width: 400px;  ultima modificacion*/
     /*margin-right: 80px; ultima modificacion*/
 }
 #sobremi .contenedor-foto img{
    padding: 5px;
-   width: 90%; 
+   width: 100%; 
    border-radius: 5px;
    background-color: #f3f3f3;
 
 }
+
 #form_action{/*legend ultima modificacion*/
     background-color: rgb(221, 221, 221);
     padding: 35px;
@@ -174,7 +176,9 @@ input, textarea{
 
 #sobremi .sobremi {
     
-    margin: 0 40px; 
+    margin:20px;
+    width: 700px;
+    height:350px; 
 }
 #envio_datos .btn-green{/*ultima actualizacion*/
   padding: 10px;
@@ -439,7 +443,7 @@ input, textarea{
 }
 /*responsive*/
  
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1340px) {
     .redes {
         display: none;
     }
@@ -463,16 +467,56 @@ input, textarea{
     nav.responsive ul li {
         margin: 5px 0;
     }
+    #icono-nav{
+        display: block;
+    }
    
     #inicio .contenido .presentacion h2 {
         font-size: 40px;
     }
+    #sobremi {
+        display: none;
+    }    
+
+   
+   #sobremi {
+    display: block;
+ 
+   }
+   #sobremi .sobremi {
+    
+    display: none;
+  }
+  #sobremi .sobremi{
+    display: block;
+    margin:20px;
+    width: 100%;
+    margin-bottom: 55px;
+   
+   
+  }
 
 
+   #form_action{
+    display: none;
+   }
 
-
-
-
-
+   #form_action{
+    
+    display: block;
+   width: min-content;
+    padding: 2px 20
+   }
 }
+
+  
+  
+
+
+
+
+
+
+
+
 
