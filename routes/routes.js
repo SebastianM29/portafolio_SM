@@ -11,9 +11,13 @@ const validationFields = require('../validation-fields/validation-routes');
 
 router.get('/', UsuariosGet )
 router.post('/user',
-[check('nombre','Por favor ingrese el nombre').not().isEmpty(),
+[
+    check('nombre','Por favor ingrese el nombre').not().isEmpty(),
+    check('mail','por favor ingrese un mail valido').isEmail(),
+    check('mensaje','Por favor ingrese contenido en su mensaje').not().exists(),
 validationFields
-],UsuariosPost)
+]
+,UsuariosPost)
 router.delete('/',UsuarioDelete)
 
 

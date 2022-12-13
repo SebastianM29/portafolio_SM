@@ -6,6 +6,7 @@ const obj = require('../config/index')
 const morgan = require('morgan')
 
 
+
 class Server {
 
     constructor (){
@@ -52,11 +53,21 @@ class Server {
     }
 
     middlewares(){
-
+      
+      
+      this.app.set('view engine','ejs')
+      this.app.set('views', "./views")
+      
+      this.app.use(express.static( 'public'))
+      
       this.app.use(cors());
+      
       this.app.use(morgan('dev'))
+      
       this.app.use(express.json());
-      this.app.use(express.static('public'))
+      
+     
+      
       this.app.use(express.urlencoded({extended:false}))
      
     }
