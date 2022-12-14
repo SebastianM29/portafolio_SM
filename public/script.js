@@ -28,13 +28,6 @@ DataGit = async() => {
 lista.appendChild(li)
 })
 
-
-
-
-
-    
-
-
 } catch (error) {
         return error
         
@@ -43,7 +36,6 @@ lista.appendChild(li)
 
 }
 DataGit();
-
 
 
 

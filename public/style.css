@@ -250,6 +250,12 @@ input, textarea{
     background-color: firebrick;
     color: #fff;
 }
+.alert-danger{
+
+    margin-top: 15px;
+    font-size: 10px;
+    
+}
 /*seccion habilidades*/
 /*seccion skills y anotacion*/
 
