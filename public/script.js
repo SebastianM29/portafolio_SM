@@ -46,8 +46,5 @@ DataGit();
 
 
 
-/*document.getElementById("envio-datos").addEventListener("click", function(event) {
-    event.preventDefault();
-  });*/
 
 

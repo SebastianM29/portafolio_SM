@@ -12,8 +12,8 @@ const UsuariosPost =async (req=request, res=response) => {
   
  
 
-   console.log(req.body)
-  let body = req.body
+  
+  const body = req.body
   const usuario = new Usuario(body)
 
   
@@ -22,9 +22,7 @@ const UsuariosPost =async (req=request, res=response) => {
   await usuario.save();
   
   res.redirect('/')
-  document.getElementById("envio-datos").addEventListener("click", function(event) {
-    event.preventDefault();
-  });
+
   
    
 
